@@ -16,6 +16,11 @@ class ViewController: UIViewController, UITableViewDataSource
         // Do any additional setup after loading the view.
     }
     
+    var items: [Item] = []
+    let item1 = Item(name: "Milk")
+    let item2 = Item(name: "Eggs")
+    var items = [item1, item2]
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 3
@@ -31,9 +36,6 @@ class ViewController: UIViewController, UITableViewDataSource
     @IBOutlet weak var tableViewA: UITableView!
     
     
-    
-    
-
     
     
 }
