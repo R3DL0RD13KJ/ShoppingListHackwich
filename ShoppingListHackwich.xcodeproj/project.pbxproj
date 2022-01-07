@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE4943002788BB7300C30AEA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4942FF2788BB7300C30AEA /* Item.swift */; };
 		FE5849D9276D75810006645A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5849D8276D75810006645A /* AppDelegate.swift */; };
 		FE5849DB276D75810006645A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5849DA276D75810006645A /* SceneDelegate.swift */; };
 		FE5849DD276D75810006645A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5849DC276D75810006645A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE4942FF2788BB7300C30AEA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FE5849D5276D75810006645A /* ShoppingListHackwich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingListHackwich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5849D8276D75810006645A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5849DA276D75810006645A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FE5849D8276D75810006645A /* AppDelegate.swift */,
 				FE5849DA276D75810006645A /* SceneDelegate.swift */,
 				FE5849DC276D75810006645A /* ViewController.swift */,
+				FE4942FF2788BB7300C30AEA /* Item.swift */,
 				FE5849DE276D75810006645A /* Main.storyboard */,
 				FE5849E1276D75810006645A /* Assets.xcassets */,
 				FE5849E3276D75810006645A /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4943002788BB7300C30AEA /* Item.swift in Sources */,
 				FE5849DD276D75810006645A /* ViewController.swift in Sources */,
 				FE5849D9276D75810006645A /* AppDelegate.swift in Sources */,
 				FE5849DB276D75810006645A /* SceneDelegate.swift in Sources */,
