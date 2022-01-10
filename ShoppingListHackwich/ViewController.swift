@@ -14,27 +14,29 @@ class ViewController: UIViewController, UITableViewDataSource
         tableViewA.dataSource = self
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        var items: [Item] = []
+        let item1 = Item(name: "Milk")
+        let item2 = Item(name: "Eggs")
+        items = [item1, item2]
     }
     
-    var items: [Item] = []
-    let item1 = Item(name: "Milk")
-    let item2 = Item(name: "Eggs")
-    var items = [item1, item2]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 3
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableViewA.dequeueReusableCell(withIdentifier: "Cellld", for: indexPath)
+        let currentItem = items[indexPath.row]
         cell.textLabel?.text = "hello"
         return cell
+        
     }
     
     @IBOutlet weak var tableViewA: UITableView!
-    
     
     
     
