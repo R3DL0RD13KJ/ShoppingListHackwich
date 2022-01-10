@@ -33,10 +33,22 @@ class ViewController: UIViewController, UITableViewDataSource
         let currentItem = items[indexPath.row]
         cell.textLabel?.text = "hello"
         return cell
-        
     }
     
     @IBOutlet weak var tableViewA: UITableView!
+    
+    @IBOutlet weak var newItemTextfield: UIBarButtonItem!
+    
+    @IBAction func whenAddItemButtonPressed(_ sender: Any)
+    {
+        if let newItemName = newItemTextfield
+        {
+            let newItem = Item(name: newItemName)
+            items.append(newItem)
+            tableView.reloadData
+        }
+    }
+    
     
     
     
