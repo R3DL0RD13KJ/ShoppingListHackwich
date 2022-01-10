@@ -45,7 +45,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="UIBarButtonItem" id="bNz-1e-Kad"/>
+                        <barButtonItem title="UIBarButtonItem" id="bNz-1e-Kad">
+                            <connections>
+                                <action selector="whenAddItemButtonPressed:" destination="BYZ-38-t0r" id="8xF-YA-jtT"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="vaO-J5-M52">
                         <nil key="title"/>
@@ -58,6 +62,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="newItemTextfield" destination="bNz-1e-Kad" id="w5F-PJ-hNy"/>
                         <outlet property="tableViewA" destination="uxp-6H-81m" id="u7g-Un-Oh3"/>
                     </connections>
                 </viewController>
