@@ -9,12 +9,13 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource
 {
+    var items: [Item] = []
     override func viewDidLoad()
     {
         tableViewA.dataSource = self
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var items: [Item] = []
+
         let item1 = Item(name: "Milk")
         let item2 = Item(name: "Eggs")
         items = [item1, item2]
@@ -23,7 +24,6 @@ class ViewController: UIViewController, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 3
         return items.count
     }
     
@@ -41,11 +41,11 @@ class ViewController: UIViewController, UITableViewDataSource
     
     @IBAction func whenAddItemButtonPressed(_ sender: Any)
     {
-        if let newItemName = newItemTextfield
+        if let newItemName = newItemTextfield.title
         {
             let newItem = Item(name: newItemName)
             items.append(newItem)
-            tableView.reloadData
+            tableViewA.reloadData()
         }
     }
     
